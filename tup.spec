@@ -4,6 +4,7 @@ Version:	0.6
 Release:	1
 License:	GPL v2
 Group:		Development/Building
+# git repo fetch: git clone git://github.com/gittup/tup.git
 Source0:	https://github.com/gittup/tup/archive/v0.6.tar.gz
 # Source0-md5:	0e4d0a6ab524731d3153e015135be097
 Patch0:		%{name}-upstream.patch
