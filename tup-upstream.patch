@@ -1,0 +1,20 @@
+commit 9cf83b62384ef37bd0faf44ce3d0052580594ed7
+Author: Mike Shal <marfey@gmail.com>
+Date:   Thu Aug 9 14:56:57 2012 -0400
+
+    inotify: Include sys/resource.h for PRIO_PROCESS define.
+    
+    This lets tup compile in Arch Linux.
+
+diff --git a/src/tup/monitor/inotify.c b/src/tup/monitor/inotify.c
+index e9031d4..f4d6fe7 100644
+--- a/src/tup/monitor/inotify.c
++++ b/src/tup/monitor/inotify.c
+@@ -45,6 +45,7 @@
+ #include <string.h>
+ #include <fcntl.h>
+ #include <sys/inotify.h>
++#include <sys/resource.h>
+ #include <sys/time.h>
+ #include <errno.h>
+ #include <sys/wait.h>
